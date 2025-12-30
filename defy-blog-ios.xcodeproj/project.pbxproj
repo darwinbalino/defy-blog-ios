@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		AFEBA39B2F03EE9200116238 /* defy-blog-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "defy-blog-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFEBA39B2F03EE9200116238 /* defy-blog-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "defy-blog-ios.app"; path = "/Users/darwinbalino/defy-blog-ios/build/Debug-iphoneos/defy-blog-ios.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AFEBA39D2F03EE9200116238 /* defy-blog-ios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "defy-blog-ios";
+			sourceTree = "<group>";
+		};
+		AFEBA3E32F03F71C00116238 /* DefyBlogTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DefyBlogTests;
+			sourceTree = "<group>";
+		};
+		AFEBA3E52F03F75400116238 /* DefyBlogUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DefyBlogUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +43,9 @@
 			isa = PBXGroup;
 			children = (
 				AFEBA39D2F03EE9200116238 /* defy-blog-ios */,
-				AFEBA39C2F03EE9200116238 /* Products */,
+				AFEBA3E32F03F71C00116238 /* DefyBlogTests */,
+				AFEBA3E52F03F75400116238 /* DefyBlogUITests */,
 			);
-			sourceTree = "<group>";
-		};
-		AFEBA39C2F03EE9200116238 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AFEBA39B2F03EE9200116238 /* defy-blog-ios.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,6 +65,8 @@
 			);
 			fileSystemSynchronizedGroups = (
 				AFEBA39D2F03EE9200116238 /* defy-blog-ios */,
+				AFEBA3E32F03F71C00116238 /* DefyBlogTests */,
+				AFEBA3E52F03F75400116238 /* DefyBlogUITests */,
 			);
 			name = "defy-blog-ios";
 			packageProductDependencies = (
@@ -95,7 +100,7 @@
 			mainGroup = AFEBA3922F03EE9200116238;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = AFEBA39C2F03EE9200116238 /* Products */;
+			productRefGroup = AFEBA3922F03EE9200116238;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
