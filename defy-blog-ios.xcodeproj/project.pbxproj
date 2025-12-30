@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AFEBA3F82F03FE0C00116238 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AFEBA3F72F03FE0C00116238 /* FirebaseAnalytics */; };
+		AFEBA3FA2F03FE0C00116238 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AFEBA3F92F03FE0C00116238 /* FirebaseAuth */; };
+		AFEBA3FC2F03FE0C00116238 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = AFEBA3FB2F03FE0C00116238 /* FirebaseCrashlytics */; };
+		AFEBA3FE2F03FE0C00116238 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AFEBA3FD2F03FE0C00116238 /* FirebaseFirestore */; };
+		AFEBA4002F03FE0C00116238 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AFEBA3FF2F03FE0C00116238 /* FirebaseStorage */; };
+		AFEBA4032F03FEE300116238 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = AFEBA4022F03FEE300116238 /* GoogleSignIn */; };
+		AFEBA4052F03FEE300116238 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AFEBA4042F03FEE300116238 /* GoogleSignInSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		AFEBA39B2F03EE9200116238 /* defy-blog-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "defy-blog-ios.app"; path = "/Users/darwinbalino/defy-blog-ios/build/Debug-iphoneos/defy-blog-ios.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -33,6 +43,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFEBA3FC2F03FE0C00116238 /* FirebaseCrashlytics in Frameworks */,
+				AFEBA3FE2F03FE0C00116238 /* FirebaseFirestore in Frameworks */,
+				AFEBA4052F03FEE300116238 /* GoogleSignInSwift in Frameworks */,
+				AFEBA3F82F03FE0C00116238 /* FirebaseAnalytics in Frameworks */,
+				AFEBA4002F03FE0C00116238 /* FirebaseStorage in Frameworks */,
+				AFEBA3FA2F03FE0C00116238 /* FirebaseAuth in Frameworks */,
+				AFEBA4032F03FEE300116238 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +87,13 @@
 			);
 			name = "defy-blog-ios";
 			packageProductDependencies = (
+				AFEBA3F72F03FE0C00116238 /* FirebaseAnalytics */,
+				AFEBA3F92F03FE0C00116238 /* FirebaseAuth */,
+				AFEBA3FB2F03FE0C00116238 /* FirebaseCrashlytics */,
+				AFEBA3FD2F03FE0C00116238 /* FirebaseFirestore */,
+				AFEBA3FF2F03FE0C00116238 /* FirebaseStorage */,
+				AFEBA4022F03FEE300116238 /* GoogleSignIn */,
+				AFEBA4042F03FEE300116238 /* GoogleSignInSwift */,
 			);
 			productName = "defy-blog-ios";
 			productReference = AFEBA39B2F03EE9200116238 /* defy-blog-ios.app */;
@@ -99,6 +123,10 @@
 			);
 			mainGroup = AFEBA3922F03EE9200116238;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AFEBA3F62F03FE0C00116238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AFEBA4012F03FEE300116238 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AFEBA3922F03EE9200116238;
 			projectDirPath = "";
@@ -333,6 +361,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFEBA3F62F03FE0C00116238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
+		AFEBA4012F03FEE300116238 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFEBA3F72F03FE0C00116238 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFEBA3F62F03FE0C00116238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		AFEBA3F92F03FE0C00116238 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFEBA3F62F03FE0C00116238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AFEBA3FB2F03FE0C00116238 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFEBA3F62F03FE0C00116238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		AFEBA3FD2F03FE0C00116238 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFEBA3F62F03FE0C00116238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AFEBA3FF2F03FE0C00116238 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFEBA3F62F03FE0C00116238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		AFEBA4022F03FEE300116238 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFEBA4012F03FEE300116238 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		AFEBA4042F03FEE300116238 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFEBA4012F03FEE300116238 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AFEBA3932F03EE9200116238 /* Project object */;
 }
